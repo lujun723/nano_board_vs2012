@@ -38,8 +38,8 @@ extern int Image$$RW_IRAM1$$ZI$$Limit;
 #pragma section="HEAP"
 #define STM32_SRAM_BEGIN    (__segment_end("HEAP"))
 #else
-extern int _ebss;
-#define STM32_SRAM_BEGIN    (&_ebss)
+extern int __bss_end;
+#define STM32_SRAM_BEGIN    (&__bss_end)
 #endif
 
 /*******************************************************************************
@@ -84,6 +84,9 @@ void rtthread_startup(void)
 
 	/* init scheduler system */
 	rt_system_scheduler_init();
+
+	/* init all device */
+	rt_device_init_all();
 
 	/* init application */
 	rt_application_init();

@@ -9,10 +9,6 @@
       <UniqueIdentifier>{40119e92-12de-498c-a6db-33037f649e09}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource files">
-      <UniqueIdentifier>{4e49fb4d-a0d3-4138-b766-ddea795cd49f}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
-    </Filter>
     <Filter Include="Make files">
       <UniqueIdentifier>{1da40fed-489a-4857-acb3-7cbbf1023427}</UniqueIdentifier>
       <Extensions>*.mak</Extensions>
@@ -32,17 +28,32 @@
     <Filter Include="Cortex-M4">
       <UniqueIdentifier>{75fd9c1d-a285-46f3-bed6-b64d4fc900e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Applications">
-      <UniqueIdentifier>{367ff109-c4d9-432e-93a3-bbc52f51b3f0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Drivers">
-      <UniqueIdentifier>{b3c50662-bc89-4161-9b0d-06b8f48a40c6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Newlib">
       <UniqueIdentifier>{d2bc4171-9ed0-426b-a1e4-bd9ee6274884}</UniqueIdentifier>
     </Filter>
     <Filter Include="Newlib\Sys">
       <UniqueIdentifier>{6853c837-7475-4409-8f8e-b514a6074fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{9985cc97-95b7-4d2e-8d29-a883775b0bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers">
+      <UniqueIdentifier>{89dde317-5e8a-4598-b28e-e65968ff515d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPU9250">
+      <UniqueIdentifier>{8da247f9-03b8-46a0-b5e4-49265426230e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPU9250\MPU9250_drv">
+      <UniqueIdentifier>{769f5a8e-1d6f-4077-a9ff-d28d186c6394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPU9250\MPU9250_app">
+      <UniqueIdentifier>{d59a0ae8-5c8f-4310-ab0a-845b241937da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPU9250\data_processing">
+      <UniqueIdentifier>{f31f6d72-f203-4e8b-b5b0-aa5f66857e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPU9250\uart_debug">
+      <UniqueIdentifier>{31139938-8ede-46d8-918b-8cf6dd21a059}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -244,29 +255,50 @@
     <ClCompile Include="rt-thread-1.2.2\components\finsh\symbol.c">
       <Filter>Finsh</Filter>
     </ClCompile>
-    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\application.c">
-      <Filter>Applications</Filter>
-    </ClCompile>
-    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\startup.c">
-      <Filter>Applications</Filter>
-    </ClCompile>
-    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.c">
-      <Filter>Drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.c">
-      <Filter>Drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_it.c">
-      <Filter>Drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.c">
-      <Filter>Drivers</Filter>
-    </ClCompile>
     <ClCompile Include="rt-thread-1.2.2\components\libc\newlib\libc.c">
       <Filter>Newlib</Filter>
     </ClCompile>
     <ClCompile Include="rt-thread-1.2.2\components\libc\newlib\syscalls.c">
       <Filter>Newlib</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\application.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\heartbeat.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\startup.c">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_it.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv\mpu9250.c">
+      <Filter>MPU9250\MPU9250_drv</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app\mpu9250_app.c">
+      <Filter>MPU9250\MPU9250_app</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_ahrs.c">
+      <Filter>MPU9250\data_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_quaternion.c">
+      <Filter>MPU9250\data_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\kalman_filter.c">
+      <Filter>MPU9250\data_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug\DataScope_DP.c">
+      <Filter>MPU9250\uart_debug</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -393,15 +425,6 @@
     <ClInclude Include="rt-thread-1.2.2\components\finsh\shell.h">
       <Filter>Finsh</Filter>
     </ClInclude>
-    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.h">
-      <Filter>Drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.h">
-      <Filter>Drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.h">
-      <Filter>Drivers</Filter>
-    </ClInclude>
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\rtconfig.h">
       <Filter>Header files\Device-specific files</Filter>
     </ClInclude>
@@ -416,6 +439,33 @@
     </ClInclude>
     <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\statfs.h">
       <Filter>Newlib\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.h">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.h">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.h">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv\mpu9250.h">
+      <Filter>MPU9250\MPU9250_drv</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app\mpu9250_app.h">
+      <Filter>MPU9250\MPU9250_app</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_ahrs.h">
+      <Filter>MPU9250\data_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_quaternion.h">
+      <Filter>MPU9250\data_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_mathUnit.h">
+      <Filter>MPU9250\data_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug\DataScope_DP.h">
+      <Filter>MPU9250\uart_debug</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

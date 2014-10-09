@@ -35,7 +35,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\drivers;$(ProjectDir)\rt-thread-1.2.2\include;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\drivers;$(ProjectDir)\rt-thread-1.2.2\include;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;C:\Users\lujun\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
@@ -62,6 +62,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\application.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\heartbeat.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\startup.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.c" />
@@ -99,6 +100,12 @@
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_ahrs.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_quaternion.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\kalman_filter.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app\mpu9250_app.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv\mpu9250.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug\DataScope_DP.c" />
     <ClCompile Include="rt-thread-1.2.2\components\finsh\cmd.c" />
     <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_compiler.c" />
     <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_error.c" />
@@ -169,6 +176,12 @@
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h" />
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h" />
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_ahrs.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_mathUnit.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing\algorithm_quaternion.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app\mpu9250_app.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv\mpu9250.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug\DataScope_DP.h" />
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\rtconfig.h" />
     <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh.h" />
     <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_error.h" />

@@ -17,6 +17,7 @@
 
 #include "stm32f4xx.h"
 #include "board.h"
+#include <stm32f4xx_conf.h>
 
 /**
  * @addtogroup STM32

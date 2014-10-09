@@ -23,7 +23,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := rt-thread-1.2.2/bsp/stm32f40x/applications/application.c rt-thread-1.2.2/bsp/stm32f40x/applications/startup.c rt-thread-1.2.2/bsp/stm32f40x/drivers/board.c rt-thread-1.2.2/bsp/stm32f40x/drivers/serial.c rt-thread-1.2.2/bsp/stm32f40x/drivers/stm32f4xx_it.c rt-thread-1.2.2/bsp/stm32f40x/drivers/usart.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/CMSIS/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c rt-thread-1.2.2/components/finsh/cmd.c rt-thread-1.2.2/components/finsh/finsh_compiler.c rt-thread-1.2.2/components/finsh/finsh_error.c rt-thread-1.2.2/components/finsh/finsh_heap.c rt-thread-1.2.2/components/finsh/finsh_init.c rt-thread-1.2.2/components/finsh/finsh_node.c rt-thread-1.2.2/components/finsh/finsh_ops.c rt-thread-1.2.2/components/finsh/finsh_parser.c rt-thread-1.2.2/components/finsh/finsh_token.c rt-thread-1.2.2/components/finsh/finsh_var.c rt-thread-1.2.2/components/finsh/finsh_vm.c rt-thread-1.2.2/components/finsh/msh.c rt-thread-1.2.2/components/finsh/msh_cmd.c rt-thread-1.2.2/components/finsh/shell.c rt-thread-1.2.2/components/finsh/symbol.c rt-thread-1.2.2/libcpu/arm/common/backtrace.c rt-thread-1.2.2/libcpu/arm/common/div0.c rt-thread-1.2.2/libcpu/arm/common/showmem.c rt-thread-1.2.2/libcpu/arm/cortex-m4/cpuport.c rt-thread-1.2.2/src/clock.c rt-thread-1.2.2/src/device.c rt-thread-1.2.2/src/idle.c rt-thread-1.2.2/src/ipc.c rt-thread-1.2.2/src/irq.c rt-thread-1.2.2/src/kservice.c rt-thread-1.2.2/src/mem.c rt-thread-1.2.2/src/memheap.c rt-thread-1.2.2/src/mempool.c rt-thread-1.2.2/src/module.c rt-thread-1.2.2/src/object.c rt-thread-1.2.2/src/scheduler.c rt-thread-1.2.2/src/slab.c rt-thread-1.2.2/src/thread.c rt-thread-1.2.2/src/timer.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/CMSIS/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f4xx.s rt-thread-1.2.2/libcpu/arm/cortex-m4/context_gcc.S
+SOURCEFILES := rt-thread-1.2.2/bsp/stm32f40x/applications/application.c rt-thread-1.2.2/bsp/stm32f40x/applications/heartbeat.c rt-thread-1.2.2/bsp/stm32f40x/applications/startup.c rt-thread-1.2.2/bsp/stm32f40x/drivers/board.c rt-thread-1.2.2/bsp/stm32f40x/drivers/serial.c rt-thread-1.2.2/bsp/stm32f40x/drivers/stm32f4xx_it.c rt-thread-1.2.2/bsp/stm32f40x/drivers/usart.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/CMSIS/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c rt-thread-1.2.2/bsp/stm32f40x/MPU9250/data_processing/algorithm_ahrs.c rt-thread-1.2.2/bsp/stm32f40x/MPU9250/data_processing/algorithm_quaternion.c rt-thread-1.2.2/bsp/stm32f40x/MPU9250/data_processing/kalman_filter.c rt-thread-1.2.2/bsp/stm32f40x/MPU9250/MPU9250_app/mpu9250_app.c rt-thread-1.2.2/bsp/stm32f40x/MPU9250/MPU9250_drv/mpu9250.c rt-thread-1.2.2/bsp/stm32f40x/MPU9250/uart_debug/DataScope_DP.C rt-thread-1.2.2/components/finsh/cmd.c rt-thread-1.2.2/components/finsh/finsh_compiler.c rt-thread-1.2.2/components/finsh/finsh_error.c rt-thread-1.2.2/components/finsh/finsh_heap.c rt-thread-1.2.2/components/finsh/finsh_init.c rt-thread-1.2.2/components/finsh/finsh_node.c rt-thread-1.2.2/components/finsh/finsh_ops.c rt-thread-1.2.2/components/finsh/finsh_parser.c rt-thread-1.2.2/components/finsh/finsh_token.c rt-thread-1.2.2/components/finsh/finsh_var.c rt-thread-1.2.2/components/finsh/finsh_vm.c rt-thread-1.2.2/components/finsh/msh.c rt-thread-1.2.2/components/finsh/msh_cmd.c rt-thread-1.2.2/components/finsh/shell.c rt-thread-1.2.2/components/finsh/symbol.c rt-thread-1.2.2/components/libc/newlib/libc.c rt-thread-1.2.2/components/libc/newlib/syscalls.c rt-thread-1.2.2/libcpu/arm/common/backtrace.c rt-thread-1.2.2/libcpu/arm/common/div0.c rt-thread-1.2.2/libcpu/arm/common/showmem.c rt-thread-1.2.2/libcpu/arm/cortex-m4/cpuport.c rt-thread-1.2.2/src/clock.c rt-thread-1.2.2/src/device.c rt-thread-1.2.2/src/idle.c rt-thread-1.2.2/src/ipc.c rt-thread-1.2.2/src/irq.c rt-thread-1.2.2/src/kservice.c rt-thread-1.2.2/src/mem.c rt-thread-1.2.2/src/memheap.c rt-thread-1.2.2/src/mempool.c rt-thread-1.2.2/src/module.c rt-thread-1.2.2/src/object.c rt-thread-1.2.2/src/scheduler.c rt-thread-1.2.2/src/slab.c rt-thread-1.2.2/src/thread.c rt-thread-1.2.2/src/timer.c rt-thread-1.2.2/bsp/stm32f40x/Libraries/CMSIS/ST/STM32F4xx/Source/Templates/gcc_ride7/startup_stm32f4xx.s rt-thread-1.2.2/libcpu/arm/cortex-m4/context_gcc.S
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 
@@ -132,6 +132,10 @@ $(BINARYDIR)/%.o : %.s $(all_make_files) |$(BINARYDIR)
 
 
 $(BINARYDIR)/application.o : rt-thread-1.2.2/bsp/stm32f40x/applications/application.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/heartbeat.o : rt-thread-1.2.2/bsp/stm32f40x/applications/heartbeat.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
@@ -283,6 +287,30 @@ $(BINARYDIR)/stm32f4xx_wwdg.o : rt-thread-1.2.2/bsp/stm32f40x/Libraries/STM32F4x
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
+$(BINARYDIR)/algorithm_ahrs.o : rt-thread-1.2.2/bsp/stm32f40x/MPU9250/data_processing/algorithm_ahrs.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/algorithm_quaternion.o : rt-thread-1.2.2/bsp/stm32f40x/MPU9250/data_processing/algorithm_quaternion.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/kalman_filter.o : rt-thread-1.2.2/bsp/stm32f40x/MPU9250/data_processing/kalman_filter.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/mpu9250_app.o : rt-thread-1.2.2/bsp/stm32f40x/MPU9250/MPU9250_app/mpu9250_app.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/mpu9250.o : rt-thread-1.2.2/bsp/stm32f40x/MPU9250/MPU9250_drv/mpu9250.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/DataScope_DP.o : rt-thread-1.2.2/bsp/stm32f40x/MPU9250/uart_debug/DataScope_DP.C $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
 $(BINARYDIR)/cmd.o : rt-thread-1.2.2/components/finsh/cmd.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
@@ -340,6 +368,14 @@ $(BINARYDIR)/shell.o : rt-thread-1.2.2/components/finsh/shell.c $(all_make_files
 
 
 $(BINARYDIR)/symbol.o : rt-thread-1.2.2/components/finsh/symbol.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/libc.o : rt-thread-1.2.2/components/libc/newlib/libc.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+
+$(BINARYDIR)/syscalls.o : rt-thread-1.2.2/components/libc/newlib/syscalls.c $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 
