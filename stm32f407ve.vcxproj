@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A35C5179-42CF-4B6F-A365-9821317FD409}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\drivers;$(ProjectDir)\rt-thread-1.2.2\include;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;C:\Users\lujun\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)stm32f407ve-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;C:\Users\lujun\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)stm32f407ve-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\application.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\startup.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_it.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\cmd.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_compiler.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_error.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_heap.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_init.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_node.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_ops.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_parser.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_token.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_var.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_vm.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\msh.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\msh_cmd.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\shell.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\symbol.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\libc\newlib\libc.c" />
+    <ClCompile Include="rt-thread-1.2.2\components\libc\newlib\syscalls.c" />
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\common\backtrace.c" />
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\common\div0.c" />
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\common\showmem.c" />
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\cortex-m4\cpuport.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\clock.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\device.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\idle.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\ipc.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\irq.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\kservice.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\mem.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\memheap.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\mempool.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\module.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\object.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\scheduler.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\slab.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\thread.c" />
+    <ClCompile Include="rt-thread-1.2.2\src\timer.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_conf.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h" />
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\rtconfig.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_error.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_heap.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_node.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_ops.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_parser.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_token.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_var.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_vm.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\msh.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\shell.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\libc.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\dirent.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\fcntl.h" />
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\statfs.h" />
+    <ClInclude Include="rt-thread-1.2.2\src\module.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f4xx.s" />
+    <None Include="rt-thread-1.2.2\libcpu\arm\cortex-m4\context_gcc.S" />
+    <None Include="stm32.mak" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

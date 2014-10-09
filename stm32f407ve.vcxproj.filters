@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{c6b89e1c-ca2d-4f17-be5a-18b6025490fe}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{40119e92-12de-498c-a6db-33037f649e09}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{4e49fb4d-a0d3-4138-b766-ddea795cd49f}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{1da40fed-489a-4857-acb3-7cbbf1023427}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{186fcaee-c945-4916-a8cc-a20e10248489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{63cad73b-32a6-448f-a200-b9b39e96e4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{cc389ea3-3b7c-4e39-b226-3d153726caee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Finsh">
+      <UniqueIdentifier>{fa16de21-1534-451f-b250-55c51a9d5b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cortex-M4">
+      <UniqueIdentifier>{75fd9c1d-a285-46f3-bed6-b64d4fc900e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Applications">
+      <UniqueIdentifier>{367ff109-c4d9-432e-93a3-bbc52f51b3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers">
+      <UniqueIdentifier>{b3c50662-bc89-4161-9b0d-06b8f48a40c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Newlib">
+      <UniqueIdentifier>{d2bc4171-9ed0-426b-a1e4-bd9ee6274884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Newlib\Sys">
+      <UniqueIdentifier>{6853c837-7475-4409-8f8e-b514a6074fd3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\clock.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\device.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\idle.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\ipc.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\irq.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\kservice.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\mem.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\memheap.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\mempool.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\module.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\object.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\scheduler.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\slab.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\thread.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\src\timer.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\cortex-m4\cpuport.c">
+      <Filter>Cortex-M4</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\common\backtrace.c">
+      <Filter>Cortex-M4</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\common\div0.c">
+      <Filter>Cortex-M4</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\libcpu\arm\common\showmem.c">
+      <Filter>Cortex-M4</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\cmd.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_compiler.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_error.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_heap.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_init.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_node.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_ops.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_parser.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_token.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_var.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\finsh_vm.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\msh.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\msh_cmd.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\shell.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\finsh\symbol.c">
+      <Filter>Finsh</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\application.c">
+      <Filter>Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\startup.c">
+      <Filter>Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_it.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.c">
+      <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\libc\newlib\libc.c">
+      <Filter>Newlib</Filter>
+    </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\components\libc\newlib\syscalls.c">
+      <Filter>Newlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_conf.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\src\module.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_error.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_heap.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_node.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_ops.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_parser.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_token.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_var.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\finsh_vm.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\msh.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\finsh\shell.h">
+      <Filter>Finsh</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\usart.h">
+      <Filter>Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\rtconfig.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\libc.h">
+      <Filter>Newlib</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\dirent.h">
+      <Filter>Newlib\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\fcntl.h">
+      <Filter>Newlib\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\components\libc\newlib\sys\statfs.h">
+      <Filter>Newlib\Sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="stm32.mak">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <None Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f4xx.s">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <None Include="rt-thread-1.2.2\libcpu\arm\cortex-m4\context_gcc.S">
+      <Filter>Cortex-M4</Filter>
+    </None>
+  </ItemGroup>
+</Project>
