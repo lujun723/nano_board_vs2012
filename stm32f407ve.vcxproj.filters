@@ -55,6 +55,9 @@
     <Filter Include="MPU9250\uart_debug">
       <UniqueIdentifier>{31139938-8ede-46d8-918b-8cf6dd21a059}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BlueTooth4_0">
+      <UniqueIdentifier>{babdb698-c872-4546-a79b-2496449eb827}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c">
@@ -300,6 +303,9 @@
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug\DataScope_DP.c">
       <Filter>MPU9250\uart_debug</Filter>
     </ClCompile>
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\BlueTooth4_0\bluetooth_4_0.c">
+      <Filter>BlueTooth4_0</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_conf.h">
@@ -466,6 +472,9 @@
     </ClInclude>
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug\DataScope_DP.h">
       <Filter>MPU9250\uart_debug</Filter>
+    </ClInclude>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\BlueTooth4_0\bluetooth_4_0.h">
+      <Filter>BlueTooth4_0</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

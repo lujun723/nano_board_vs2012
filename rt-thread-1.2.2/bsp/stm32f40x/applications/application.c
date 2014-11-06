@@ -32,11 +32,12 @@
 extern int nano_board_heartbeat_init(void);
 extern int nano_board_ble_init(void);
 extern int nano_board_mpu9250_app_init(void);
-
+extern int nano_board_ble_init(void);
 
 void nano_board_init(void)
 {
 	nano_board_heartbeat_init();//heartbeat thread
+	nano_board_ble_init();//bluetooth thread
 	nano_board_mpu9250_app_init();//mpu9250 thread
 }
 void rt_init_thread_entry(void* parameter)

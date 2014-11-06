@@ -152,13 +152,11 @@ static void rt_thread_entry_mpu9250_app(void* parameter)
 			//-----换算值---------------------------
 			get_true();
 		}
-		//-----加速度计的位移计算----------------------
-		//get_distance();
 		//-----通过图形上位机显示数据----------------
 		Data_Scope_work();
 		
 		//-----显示加速度-----------------------------
-		/**/
+		/*
 		rt_kprintf("Acc.X=%d\r\n",Acc.X);
 		rt_kprintf("Acc.Y=%d\r\n",Acc.Y);
 		rt_kprintf("Acc.Z=%d\r\n",Acc.Z);
@@ -168,8 +166,9 @@ static void rt_thread_entry_mpu9250_app(void* parameter)
 		rt_kprintf("Acc.TrueX=%s\r\n",true_x);
 		rt_kprintf("Acc.TrueY=%s\r\n",true_y);
 		rt_kprintf("Acc.TrueZ=%s\r\n",true_z);
+		*/
 		//-----显示角加速度-------------------------------
-		/**/
+		/*
 		rt_kprintf("Gyr.X=%d\r\n",Gyr.X);
 		rt_kprintf("Gyr.Y=%d\r\n",Gyr.Y);
 		rt_kprintf("Gyr.Z=%d\r\n",Gyr.Z);
@@ -179,7 +178,7 @@ static void rt_thread_entry_mpu9250_app(void* parameter)
 		rt_kprintf("Gyr.TrueX=%s\r\n",true_gx);
 		rt_kprintf("Gyr.TrueY=%s\r\n",true_gy);
 		rt_kprintf("Gyr.TrueZ=%s\r\n",true_gz);
-		
+		*/
 		//-----显示磁力角----------------------------------
  #ifdef USE_MAG
 		rt_kprintf("Mag.X=%d\r\n",Mag.X);
@@ -203,11 +202,11 @@ static void rt_thread_entry_mpu9250_app(void* parameter)
 		*/
 		//------显示温度-----------------------------------------------
 		/**/
-		sprintf(f_buf_temp,"%3.3f",Temp_True);
-		rt_kprintf("Temperature=%s\r\n",f_buf_temp);
+		//sprintf(f_buf_temp,"%3.3f",Temp_True);
+		//xxrt_kprintf("Temperature=%s\r\n",f_buf_temp);
 		
 		//------延时函数-----------------------------------------------
-		rt_thread_delay(1);
+		rt_thread_delay(2);
     }
 }
 

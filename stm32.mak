@@ -16,7 +16,7 @@ OBJCOPY := $(TOOLCHAIN_ROOT)/bin/arm-eabi-objcopy.exe
 
 #Additional flags
 PREPROCESSOR_MACROS += ARM_MATH_CM4 stm32_flash_layout STM32F407VE STM32F407xx
-INCLUDE_DIRS +=. .  $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/uart_debug $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/data_processing $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/MPU9250_drv $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/MPU9250_app $(PROJ_ROOT)/bsp/stm32f40x $(PROJ_ROOT)/bsp/stm32f40x/Libraries/CMSIS/Include $(PROJ_ROOT)/bsp/stm32f40x/Libraries/CMSIS/ST/STM32F4xx/Include $(PROJ_ROOT)/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/inc $(PROJ_ROOT)/include $(PROJ_ROOT)/bsp/stm32f40x/drivers $(PROJ_ROOT)/components/finsh  
+INCLUDE_DIRS +=. .  $(PROJ_ROOT)/bsp/stm32f40x/BlueTooth4_0 $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/uart_debug $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/data_processing $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/MPU9250_drv $(PROJ_ROOT)/bsp/stm32f40x/MPU9250/MPU9250_app $(PROJ_ROOT)/bsp/stm32f40x $(PROJ_ROOT)/bsp/stm32f40x/Libraries/CMSIS/Include $(PROJ_ROOT)/bsp/stm32f40x/Libraries/CMSIS/ST/STM32F4xx/Include $(PROJ_ROOT)/bsp/stm32f40x/Libraries/STM32F4xx_StdPeriph_Driver/inc $(PROJ_ROOT)/include $(PROJ_ROOT)/bsp/stm32f40x/drivers $(PROJ_ROOT)/components/finsh  
 LIBRARY_DIRS += 
 LIBRARY_NAMES += 
 ADDITIONAL_LINKER_INPUTS += 

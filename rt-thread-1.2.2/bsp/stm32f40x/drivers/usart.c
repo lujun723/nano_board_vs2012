@@ -20,6 +20,7 @@
 #include "board.h"
 #include <serial.h>
 #include <stm32f4xx_conf.h>
+#include "bluetooth_4_0.h"
 
 #ifdef RT_USING_UART1
 struct stm32_serial_int_rx uart1_int_rx;
@@ -253,7 +254,7 @@ void rt_hw_usart_init()
 #endif
 
 #ifdef RT_USING_UART3
-	USART_InitStructure.USART_BaudRate = 115200;
+	USART_InitStructure.USART_BaudRate = BLUETOOTH_DEFAULT;
 	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
 	USART_InitStructure.USART_StopBits = USART_StopBits_1;
 	USART_InitStructure.USART_Parity = USART_Parity_No;

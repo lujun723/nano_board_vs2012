@@ -35,7 +35,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\drivers;$(ProjectDir)\rt-thread-1.2.2\include;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\ST\STM32F4xx\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\CMSIS\Include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\Libraries\STM32F4xx_StdPeriph_Driver\inc;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\drivers;$(ProjectDir)\rt-thread-1.2.2\include;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_app;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\MPU9250_drv;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\data_processing;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\MPU9250\uart_debug;$(ProjectDir)\rt-thread-1.2.2\bsp\stm32f40x\BlueTooth4_0;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;C:\Users\lujun\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
@@ -64,6 +64,7 @@
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\application.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\heartbeat.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\applications\startup.c" />
+    <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\BlueTooth4_0\bluetooth_4_0.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.c" />
     <ClCompile Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_it.c" />
@@ -144,6 +145,7 @@
     <ClCompile Include="rt-thread-1.2.2\src\timer.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\BlueTooth4_0\bluetooth_4_0.h" />
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\board.h" />
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\serial.h" />
     <ClInclude Include="rt-thread-1.2.2\bsp\stm32f40x\drivers\stm32f4xx_conf.h" />
